@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,114 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PushNotifications" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goku.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Y4p-3D-YKl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yU-95-pxe">
+                                <rect key="frame" x="0.0" y="44" width="175" height="734"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qFm-jW-7VY">
+                                        <rect key="frame" x="-0.6666666666666714" y="0.0" width="175.33333333333337" height="734"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LO9-56-kk0">
+                                            <rect key="frame" x="0.0" y="0.0" width="175.33333333333337" height="734"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSC-Ub-xrE">
+                                                    <rect key="frame" x="10" y="10" width="155.33333333333334" height="40"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="G9n-lx-a7C"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <state key="normal" title="Manga">
+                                                        <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="connorRadius">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="notifyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IwJ-wU-yny"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwx-lz-dho">
+                                                    <rect key="frame" x="10" y="60" width="155.33333333333334" height="40"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="HsC-Vt-o6o"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <state key="normal" title="Anime">
+                                                        <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="connorRadius">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="tSC-Ub-xrE" secondAttribute="trailing" constant="10" id="C83-FU-Cfq"/>
+                                                <constraint firstItem="tSC-Ub-xrE" firstAttribute="leading" secondItem="LO9-56-kk0" secondAttribute="leading" constant="10" id="CPw-AO-yzm"/>
+                                                <constraint firstAttribute="trailing" secondItem="gwx-lz-dho" secondAttribute="trailing" constant="10" id="FT7-2F-f2c"/>
+                                                <constraint firstItem="gwx-lz-dho" firstAttribute="leading" secondItem="LO9-56-kk0" secondAttribute="leading" constant="10" id="Ina-Df-3XY"/>
+                                                <constraint firstItem="gwx-lz-dho" firstAttribute="top" secondItem="tSC-Ub-xrE" secondAttribute="bottom" constant="10" id="hHi-5m-h0l"/>
+                                                <constraint firstItem="tSC-Ub-xrE" firstAttribute="top" secondItem="LO9-56-kk0" secondAttribute="top" constant="10" id="w40-cC-MWP"/>
+                                            </constraints>
+                                        </view>
+                                        <blurEffect style="light"/>
+                                    </visualEffectView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="qFm-jW-7VY" firstAttribute="height" secondItem="0yU-95-pxe" secondAttribute="height" id="4dw-um-ayx"/>
+                                    <constraint firstAttribute="width" constant="175" id="4i8-qT-s7C"/>
+                                    <constraint firstItem="qFm-jW-7VY" firstAttribute="centerY" secondItem="0yU-95-pxe" secondAttribute="centerY" id="KBK-DR-6NG"/>
+                                    <constraint firstItem="qFm-jW-7VY" firstAttribute="centerX" secondItem="0yU-95-pxe" secondAttribute="centerX" id="Qjk-tk-okA"/>
+                                    <constraint firstItem="qFm-jW-7VY" firstAttribute="width" secondItem="0yU-95-pxe" secondAttribute="width" id="jI0-rv-Qmw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Y4p-3D-YKl" secondAttribute="bottom" id="Hyj-8J-GIf"/>
+                            <constraint firstItem="Y4p-3D-YKl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SFz-GZ-1Ve"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0yU-95-pxe" secondAttribute="bottom" id="TxP-I0-anY"/>
+                            <constraint firstItem="0yU-95-pxe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aZb-Bm-nZ1"/>
+                            <constraint firstItem="0yU-95-pxe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fW8-EW-HZE"/>
+                            <constraint firstItem="Y4p-3D-YKl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lS7-Rb-PCU"/>
+                            <constraint firstItem="Y4p-3D-YKl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="t9R-PK-Dn2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Dlv-W0-ddP" appends="YES" id="lcV-38-jOO"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="blurView" destination="qFm-jW-7VY" id="ggZ-Eh-qDE"/>
+                        <outlet property="sideView" destination="0yU-95-pxe" id="Guc-Tu-CBf"/>
+                        <outlet property="viewConstraint" destination="aZb-Bm-nZ1" id="g0T-8y-IDY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Dlv-W0-ddP">
+                    <connections>
+                        <action selector="panGesture:" destination="BYZ-38-t0r" id="obT-5B-TwY"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="133.74384236453201"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="goku.jpg" width="1044" height="2047"/>
+    </resources>
 </document>

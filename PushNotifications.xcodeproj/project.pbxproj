@@ -14,6 +14,8 @@
 		61B1E6EE205C1C6100EED683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B1E6EC205C1C6100EED683 /* LaunchScreen.storyboard */; };
 		61B1E6F9205C1C6100EED683 /* PushNotificationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B1E6F8205C1C6100EED683 /* PushNotificationsTests.swift */; };
 		61B1E704205C1C6100EED683 /* PushNotificationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B1E703205C1C6100EED683 /* PushNotificationsUITests.swift */; };
+		61B1E712205C412600EED683 /* goku.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61B1E711205C412600EED683 /* goku.jpg */; };
+		61B1E718205C604000EED683 /* h.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61B1E717205C604000EED683 /* h.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		61B1E6FF205C1C6100EED683 /* PushNotificationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushNotificationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B1E703205C1C6100EED683 /* PushNotificationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsUITests.swift; sourceTree = "<group>"; };
 		61B1E705205C1C6100EED683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61B1E711205C412600EED683 /* goku.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = goku.jpg; path = ../../goku.jpg; sourceTree = "<group>"; };
+		61B1E717205C604000EED683 /* h.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = h.jpg; path = ../../h.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,9 @@
 				61B1E6E3205C1C6100EED683 /* AppDelegate.swift */,
 				61B1E6E5205C1C6100EED683 /* ViewController.swift */,
 				61B1E6E7205C1C6100EED683 /* Main.storyboard */,
+				61B1E711205C412600EED683 /* goku.jpg */,
 				61B1E6EA205C1C6100EED683 /* Assets.xcassets */,
+				61B1E717205C604000EED683 /* h.jpg */,
 				61B1E6EC205C1C6100EED683 /* LaunchScreen.storyboard */,
 				61B1E6EF205C1C6100EED683 /* Info.plist */,
 			);
@@ -233,8 +239,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				61B1E6EE205C1C6100EED683 /* LaunchScreen.storyboard in Resources */,
+				61B1E712205C412600EED683 /* goku.jpg in Resources */,
 				61B1E6EB205C1C6100EED683 /* Assets.xcassets in Resources */,
 				61B1E6E9205C1C6100EED683 /* Main.storyboard in Resources */,
+				61B1E718205C604000EED683 /* h.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
