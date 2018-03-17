@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goku.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Y4p-3D-YKl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goku" translatesAutoresizingMaskIntoConstraints="NO" id="Y4p-3D-YKl">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yU-95-pxe">
@@ -121,6 +121,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="goku.jpg" width="1044" height="2047"/>
+        <image name="goku" width="638" height="1250"/>
     </resources>
 </document>
